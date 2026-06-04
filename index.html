@@ -422,8 +422,15 @@ nav.scrolled{background:rgba(5,8,16,0.95);box-shadow:0 4px 40px rgba(0,0,0,.6);}
   backdrop-filter:blur(16px);position:relative;overflow:hidden;
 }
 .contact-cta::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 50% 0%,rgba(255,107,43,.08),transparent 60%);
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255,107,43,.08),
+      transparent 60%
+  );
+  pointer-events:none;
 }
 .cta-big{font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);letter-spacing:2px;margin-bottom:1rem;position:relative;}
 .cta-p{color:var(--c-muted2);margin-bottom:2rem;position:relative;}
@@ -533,8 +540,8 @@ footer span{color:var(--c-orange);}
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="mailto:kapil302424@gmail.com" class="nav-cta"><i class="fas fa-paper-plane"></i> Hire Me</a>
-    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    <a href="mailto:kapil302424@gmail.com?subject=Job%20Opportunity&body=Hello%20Kapil," class="nav-cta"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
   </div>
 </nav>
 
@@ -548,16 +555,21 @@ footer span{color:var(--c-orange);}
         <div class="line-outer"><span class="line-inner d2">SHARMA</span></div>
       </h1>
       <p class="hero-desc">
-        <strong>Laravel & Full-Stack Developer</strong> crafting high-performance enterprise web applications, CRM/LMS/HRM platforms, and government-grade portals with 3+ years of production experience.
+        <strong>Senior Laravel & Full Stack Developer</strong> with 4+ years of experience building Multi-Tenant SaaS Platforms, Enterprise Applications, AWS Cloud Infrastructure, REST APIs, Payment Systems, and AI-powered solutions.
       </p>
       <div class="hero-stats">
-        <div><div class="stat-num">3+</div><div class="stat-label">Years Experience</div></div>
-        <div><div class="stat-num">18+</div><div class="stat-label">Projects Delivered</div></div>
-        <div><div class="stat-num">3</div><div class="stat-label">Companies</div></div>
+        <div><div class="stat-num">4+</div><div class="stat-label">Years Experience</div></div>
+        <div><div class="stat-num">20+</div><div class="stat-label">Projects Delivered</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label">Companies</div></div>
       </div>
       <div class="hero-cta">
-        <a href="mailto:kapil302424@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Get in Touch</a>
+        <a href="mailto:kapil302424@gmail.com?subject=Job%20Opportunity&body=Hello%20Kapil," class="btn btn-primary"><i class="fas fa-envelope"></i> Get in Touch</a>
         <a href="https://linkedin.com/in/kapil-sharma-64150a1b3" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="full stack developer.pdf"
+          target="_blank"
+          class="btn btn-outline">
+          <i class="fas fa-download"></i> Resume
+        </a>
       </div>
     </div>
     <div class="card-3d-wrap" id="c3w">
@@ -571,7 +583,7 @@ footer span{color:var(--c-orange);}
           </div>
         </div>
         <div class="p-name">KAPIL SHARMA</div>
-        <div class="p-title">Laravel Developer</div>
+        <div class="p-title">Senior Software Engineer | Laravel | AWS</div>
         <div class="p-meta">
           <div class="p-meta-row"><i class="fas fa-map-marker-alt"></i> Janakpuri, Delhi, India</div>
           <div class="p-meta-row"><i class="fas fa-envelope"></i> kapil302424@gmail.com</div>
@@ -593,7 +605,9 @@ footer span{color:var(--c-orange);}
   <div class="section-inner">
     <div class="s-label">Experience</div>
     <h2 class="s-title reveal">WORK HISTORY</h2>
-    <p class="s-desc reveal">Proven experience delivering and scaling production-ready CRM, HRM, ERP, LMS, SaaS, and government applications, with expertise in Laravel, AWS cloud services, RESTful APIs, database optimization, Linux infrastructure, and enterprise system architecture.</p>
+    <p class="s-desc reveal">
+4+ years of professional experience designing scalable SaaS platforms, enterprise applications, cloud-native systems, secure APIs, and business-critical solutions using Laravel, AWS, MySQL, Redis, and modern DevOps practices.
+</p>
     <div class="timeline">
 
       <!-- Wings -->
@@ -603,18 +617,19 @@ footer span{color:var(--c-orange);}
           <div class="exp-head">
             <div>
               <div class="exp-company">Wings Pharmaceuticals</div>
-              <div class="exp-role">Laravel Developer</div>
+              <div class="exp-role">Senior Software Engineer | Laravel | AWS</div>
             </div>
-            <div class="exp-period"><i class="fas fa-circle live-dot"></i> May 2025 – Present</div>
+            <div class="exp-period"><i class="fas fa-circle live-dot"></i> May 2026 – Present . Delhi</div>
           </div>
           <p class="exp-desc">Full-stack development and infrastructure ownership for a growing pharmaceutical company's internal platforms and client-facing systems.</p>
           <ul class="exp-list">
-            <li>System design & architecture planning for enterprise-grade applications</li>
-            <li>AWS infrastructure — EC2 Auto Scaling, Load Balancers, S3, RDS, CloudWatch</li>
-            <li>Linux server management (Ubuntu) — Nginx, cron jobs, deployment pipelines</li>
-            <li>RESTful API development and third-party integrations</li>
-            <li>Database optimization — indexing, query tuning, performance profiling</li>
-            <li>CI/CD setup, security hardening — HTTPS, firewall rules, RBAC</li>
+            <li>Architected and managed AWS infrastructure using EC2, Auto Scaling, Load Balancers, S3, RDS and CloudWatch</li>
+            <li>Developed enterprise-grade RESTful APIs and secure backend services</li>
+            <li>Implemented RBAC, authentication systems and security hardening</li>
+            <li>Managed Linux servers, Nginx configurations and deployment pipelines</li>
+            <li>Integrated MSG91 OTP authentication and third-party APIs</li>
+            <li>Optimized application performance through indexing, query tuning and profiling</li>
+            <li>Implemented CI/CD workflows and deployment automation</li>
           </ul>
           <div class="tags">
             <span class="tag">Laravel</span><span class="tag">AWS EC2</span><span class="tag">AWS S3</span>
@@ -633,15 +648,17 @@ footer span{color:var(--c-orange);}
               <div class="exp-company">Learnfly — GETYN SaaS</div>
               <div class="exp-role">Laravel Developer</div>
             </div>
-            <div class="exp-period"><i class="fas fa-calendar-alt"></i> Until April 2025</div>
+            <div class="exp-period"><i class="fas fa-calendar-alt"></i> Feb 2025 - Apr 2026 . Delhi</div>
           </div>
           <p class="exp-desc">Owned end-to-end maintenance and feature evolution of the <a href="https://www.getyn.com/" target="_blank" style="color:var(--c-orange);">GETYN</a> multi-product SaaS ecosystem.</p>
           <ul class="exp-list">
-            <li>Full maintenance of main website + all product sub-applications</li>
-            <li>Live production bug fixing & performance optimization</li>
-            <li>Multi-tenant architecture & tenant-specific customizations</li>
-            <li>Payment gateways: Rebilly, Recurly, Razorpay, Xpay</li>
-            <li>Third-party API integrations, monitoring & alerting</li>
+            <li>Architected Multi-Tenant SaaS applications with tenant isolation and RBAC</li>
+            <li>Integrated Twilio OTP authentication and Auth0 SSO</li>
+            <li>Integrated Rebilly, Recurly, Razorpay and XPay payment gateways</li>
+            <li>Developed JWT-secured RESTful APIs and backend services</li>
+            <li>Implemented Redis caching and MySQL optimization strategies</li>
+            <li>Worked with AWS EC2, S3, RDS and CloudWatch services</li>
+            <li>Maintained and supported 14+ live production applications</li>
           </ul>
           <div class="tags">
             <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
@@ -671,6 +688,37 @@ footer span{color:var(--c-orange);}
           <div class="tags">
             <span class="tag">Laravel</span><span class="tag">Core PHP</span><span class="tag">MySQL</span>
             <span class="tag">Blade</span><span class="tag">AJAX</span><span class="tag">SMS API</span><span class="tag">KYC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KKM Infra Pvt Ltd -->
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="exp-card">
+          <div class="exp-head">
+            <div>
+              <div class="exp-company">KKM Infra Pvt Ltd</div>
+              <div class="exp-role">.NET Developer</div>
+            </div>
+            <div class="exp-period"><i class="fas fa-calendar-alt"></i> Jan 2022 – Feb 2023 · Noida</div>
+          </div>
+          <p class="exp-desc">Assisted in the development and maintenance of a Construction Management System using ASP.NET, C#, SQL Server, HTML, CSS, JavaScript, and jQuery</p>
+          <ul class="exp-list">
+            <li>Developed modules for contractor registration, project details management, and work order tracking under the guidance of senior developers</li>
+            <li>Created forms and reports for material requisition, material issue, and site progress monitoring</li>
+            <li>Worked on database design, stored procedures, and SQL queries for project, contractor, and inventory-related data.</li>
+            <li>Participated in the implementation of role-based login and user access management for different project stakeholders.</li>
+            <li>Fixed bugs, enhanced existing features, and provided technical support for deployed application</li>
+            <li>Assisted in generating reports related to project status, material consumption, and contractor activities.</li>
+           
+              <li>Collaborated with team members during requirement gathering, testing, deployment, and user acceptance testing (UAT).</li>
+          <li>Gained hands-on experience in the software development lifecycle, database management, and web application development using the Microsoft .NET technology stack.</li>
+          </ul>
+          
+          <div class="tags">
+            <span class="tag">.NET</span><span class="tag">C#</span><span class="tag">SQL Server</span>
+            <span class="tag">ASP.NET MVC</span><span class="tag">Entity Framework</span><span</span></span> 
           </div>
         </div>
       </div>
@@ -727,6 +775,15 @@ footer span{color:var(--c-orange);}
           <span class="pill"><i class="fas fa-database"></i> MySQL</span>
           <span class="pill"><i class="fas fa-network-wired"></i> Nginx</span>
           <span class="pill"><i class="fas fa-shield-alt"></i> Security</span>
+          <span class="pill"><i class="fab fa-aws"></i> Auto Scaling</span>
+
+          <span class="pill"><i class="fab fa-aws"></i> Load Balancer</span>
+
+          <span class="pill"><i class="fab fa-aws"></i> IAM</span>
+
+          <span class="pill"><i class="fab fa-aws"></i> Route53</span>
+
+          <span class="pill"><i class="fab fa-aws"></i> GitHub Actions</span>
         </div>
       </div>
 
@@ -855,8 +912,40 @@ footer span{color:var(--c-orange);}
     </div>
 </div>
 
+<div class="proj-card reveal delay-4">
+  <div class="proj-num">05</div>
+
+  <div class="proj-name">
+    Multi-Tenant SaaS Platform
+  </div>
+
+  <div class="proj-desc">
+    Enterprise SaaS ecosystem supporting multiple products with tenant isolation, subscription billing, role management, cloud deployment, and secure authentication.
+  </div>
+
+    <ul class="proj-feats">
+      <li>Multi-Tenant Architecture</li>
+      <li>Tenant Aware RBAC</li>
+      <li>JWT & OAuth2 Authentication</li>
+      <li>Auth0 SSO Integration</li>
+      <li>4 Payment Gateway Integrations</li>
+      <li>AWS Cloud Infrastructure</li>
+      <li>Redis Caching & Performance Optimization</li>
+    </ul>
+
+    <div class="tags">
+      <span class="tag">Laravel</span>
+      <span class="tag">AWS</span>
+      <span class="tag">Redis</span>
+      <span class="tag">JWT</span>
+      <span class="tag">OAuth2</span>
+      <span class="tag">SaaS</span>
+      <span class="tag">Multi-Tenant</span>
+    </div>
+  </div>
+
       <div class="proj-card reveal delay-4">
-        <div class="proj-num">05</div>
+        <div class="proj-num">06</div>
         <div class="proj-name">Enterprise Suite</div>
         <div class="proj-desc">Multiple business-critical systems delivered for enterprise and government clients across sectors.</div>
         <ul class="proj-feats">
@@ -897,7 +986,7 @@ footer span{color:var(--c-orange);}
     <h2 class="s-title reveal">LET'S CONNECT</h2>
     <div class="contact-grid">
       <div class="contact-items reveal">
-        <a href="mailto:kapil302424@gmail.com" class="c-item">
+        <a href="mailto:kapil302424@gmail.com?subject=Job%20Opportunity&body=Hello%20Kapil," class="c-item">
           <div class="c-icon"><i class="fas fa-envelope"></i></div>
           <div><div class="c-label">Email</div><div class="c-val">kapil302424@gmail.com</div></div>
         </a>
@@ -911,13 +1000,17 @@ footer span{color:var(--c-orange);}
         </div>
         <div class="socials">
           <a href="https://linkedin.com/in/kapil-sharma-64150a1b3" target="_blank" class="soc-btn"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:kapil302424@gmail.com" class="soc-btn"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:kapil302424@gmail.com?subject=Job%20Opportunity&body=Hello%20Kapil," class="soc-btn"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
       <div class="contact-cta reveal delay-2">
-        <div class="cta-big">Open to New Roles</div>
+        <div class="cta-big">Available for Senior Laravel & Full Stack Roles</div>
         <p class="cta-p">Looking for challenging opportunities in Laravel, full-stack development, or cloud-first engineering roles.</p>
-        <a href="mailto:kapil302424@gmail.com" class="btn btn-primary" style="display:inline-flex;">
+
+       
+       <a href="mailto:kapil302424@gmail.com?subject=Job%20Opportunity&body=Hello%20Kapil,"
+          class="btn btn-primary"
+          style="display:inline-flex;">
           <i class="fas fa-paper-plane"></i> Send a Message
         </a>
       </div>
@@ -926,7 +1019,7 @@ footer span{color:var(--c-orange);}
 </section>
 
 <footer>
-  <p>© 2026 <span>Kapil Sharma</span> · Laravel & Full-Stack Developer · Delhi, India</p>
+  <p>© 2026 <span>Kapil Sharma</span> · Senior Software Engineer | Laravel | AWS | SaaS Architecture · Delhi, India</p>
 </footer>
 
 <script>
